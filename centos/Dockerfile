@@ -4,3 +4,8 @@ RUN yum -y update \
  && yum -y install publican publican-doc \
  && rm -rf /var/cache/yum/* \
  && yum clean all
+
+ 
+ADD publican.cfg /root
+
+CMD /bin/bash
